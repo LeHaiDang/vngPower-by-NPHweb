@@ -50,26 +50,17 @@ h6 {
   height: 66px;
 }
 
-.navbar-fixed a {
+  .navbar-fixed a {
+    font-weight: bold;
+    font-size: 18px;
+  }
+
+#nav-mobile a {
   color: red;
 }
 
-  .navbar-fixed .hide-on-med-and-down {
-    width: 300px;
-  }
-
-  .navbar-fixed .hide-on-med-and-down li {
-    width: 50%;
-    text-align: center;
-  }
-
-  .navbar-fixed .hide-on-med-and-down a {
-    color: white;
-    width: 100%;
-  }
-
 .intro {
-  height: 100vh;
+  height: 90vh;
   text-align: center;
 }
 
@@ -92,30 +83,49 @@ h6 {
   background-position: center;
 }
 
-.indicators li {
-  background-color: red;
+.slider .caption {
+  background: rgba(0,0,0,0.5);
+  height: 280px;
+  overflow: hidden;
 }
+
+  .slider.caption p {
+    -webkit-text-overflow: ellipsis;
+    -moz-text-overflow: ellipsis;
+    text-overflow: ellipsis;
+    -webkit-content: '...';
+    -moz-content: '...';
+    content: '...';
+  }
+
+  .slider .caption h3 {
+    padding-top: 0;
+    margin-top: 10px;
+  }
 
 
 /* - - - - - - - - - - - - - - - - - - - - - - -
-   Start
+   Project
    - - - - - - - - - - - - - - - - - - - - - - - */
 
 .primo-start-1 {
   height: 400px;
-  background: url(../img/service-1.jpg);
+  background: url(../img/service-3.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
 }
 
 .primo-start-2 {
-  height: 400px;
-  background: url(../img/service-2.jpg);
+  height: 900px;
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
 }
+
+  .primo-start-2 .row {
+    overflow: auto;
+  }
 
 
 /* - - - - - - - - - - - - - - - - - - - - - - -
@@ -139,13 +149,17 @@ h6 {
    Portfolio
    - - - - - - - - - - - - - - - - - - - - - - - */
 
+.card {
+  height: 456.4px;
+}
+
 .card:hover {
   box-shadow: 0 5px 11px 0 rgba(0, 0, 0, 0.18), 0 4px 15px 0 rgba(0, 0, 0, 0.15);
 }
 
 
 /* - - - - - - - - - - - - - - - - - - - - - - -
-   Team
+   Contact
    - - - - - - - - - - - - - - - - - - - - - - - */
 
 .team-col {
@@ -181,6 +195,18 @@ a:hover .fa-circle {
   /* light-blue accent-1 */
 }
 
+a:hover .red-text {
+  color: red !important;
+  /* red accent 2 */
+}
+
+.input-field .prefix.active {
+  color: red;
+}
+
+.input-field input[type=text]:focus + label {
+  color: red;
+}
 
 /* - - - - - - - - - - - - - - - - - - - - - - -
    Footer
