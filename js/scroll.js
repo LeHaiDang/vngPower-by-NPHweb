@@ -13,30 +13,20 @@ $(function() {
   });
 });
 
-// slider chứng nhận
+
 $(document).ready(function(){
+  // slider chứng nhận
   $('.carousel').carousel();
-   $('.carousel.carousel-slider').carousel({full_width: true});
-});
+  $('.carousel.carousel-slider').carousel({full_width: true});
 
-//slider banner
-$(document).ready(function(){
+  // slider banner
   $('.slider').slider({full_width: true});
-});
 
-
-$(document).ready(function() {
+  //
   Materialize.updateTextFields();
-});
 
-
-$(document).ready(function(){
+  //
   $('.tooltipped').tooltip({delay: 50});
-});
-
-// phóng to ảnh
-$(document).ready(function(){
-  $('.materialboxed').materialbox();
 });
         
 
